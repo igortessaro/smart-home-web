@@ -1,0 +1,70 @@
+{
+    "expenses": [
+        {
+            "id": "08db2331-5bf9-49bf-845b-3df260fb761c",
+            "name": "expense 1",
+            "description": "test-description",
+            "amount": 100.00,
+            "due_date": null,
+            "pay_date": null,
+            "create_by": "8667eed0-c10c-11ed-91ba-0242ac120002",
+            "create_at": "2023-03-12 19:38:31",
+            "category_id": "8659d09e-c10c-11ed-91ba-0242ac120002"
+        },
+        {
+            "id": "08db2331-b475-4b40-8c2d-f5647ab4530a",
+            "name": "expense 2",
+            "description": "test-description",
+            "amount": 100.00,
+            "due_date": null,
+            "pay_date": null,
+            "create_by": "8667eed0-c10c-11ed-91ba-0242ac120002",
+            "create_at": "2023-03-12 19:40:59",
+            "category_id": "8659d09e-c10c-11ed-91ba-0242ac120002"
+        },
+        {
+            "id": "08db2332-7f99-46fb-8668-1205f5ee7644",
+            "name": "expense 3",
+            "description": "test-description",
+            "amount": 100.00,
+            "due_date": null,
+            "pay_date": null,
+            "create_by": "8667eed0-c10c-11ed-91ba-0242ac120002",
+            "create_at": "2023-03-12 19:46:40",
+            "category_id": "8659d09e-c10c-11ed-91ba-0242ac120002"
+        },
+        {
+            "id": "08db34a9-2949-49b7-86d2-6bb74fa2eac8",
+            "name": "expense 4",
+            "description": "test-description",
+            "amount": 100.00,
+            "due_date": null,
+            "pay_date": null,
+            "create_by": "8667eed0-c10c-11ed-91ba-0242ac120002",
+            "create_at": "2023-04-04 01:08:55",
+            "category_id": "8659d09e-c10c-11ed-91ba-0242ac120002"
+        },
+        {
+            "id": "08db34a9-3b28-4b4d-8080-890c4d12a14c",
+            "name": "expense 5",
+            "description": "test-description",
+            "amount": 34.50,
+            "due_date": null,
+            "pay_date": null,
+            "create_by": "8667eed0-c10c-11ed-91ba-0242ac120002",
+            "create_at": "2023-04-04 01:09:25",
+            "category_id": "8659d09e-c10c-11ed-91ba-0242ac120002"
+        },
+        {
+            "id": "08db34a9-42a4-4d66-8c95-aa0aa59c8f92",
+            "name": "expense 6",
+            "description": "test-description",
+            "amount": 345.12,
+            "due_date": null,
+            "pay_date": null,
+            "create_by": "8667eed0-c10c-11ed-91ba-0242ac120002",
+            "create_at": "2023-04-04 01:09:38",
+            "category_id": "8659d09e-c10c-11ed-91ba-0242ac120002"
+        }
+    ]
+}
