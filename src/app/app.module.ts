@@ -15,7 +15,7 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatDividerModule } from "@angular/material/divider";
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
-import { RouterModule, Routes }   from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { HomeComponent } from './pages/home/home.component';
@@ -35,10 +35,6 @@ import { PeriodComponent } from './components/period/period.component';
         MatToolbarModule,
         MatDividerModule,
         MatButtonModule,
-        MatSidenavModule,
-        MatMenuModule,
-        MatToolbarModule,
-        MatIconModule,
         MatListModule,
         RouterModule,
         MatExpansionModule,

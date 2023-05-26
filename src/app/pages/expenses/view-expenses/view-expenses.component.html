@@ -1,47 +1,45 @@
-<p>Expenses of the period: {{selectedPeriod.year}}/{{selectedPeriod.month}}</p>
+<p>Expenses of the period: {{ selectedPeriod.year }}/{{ selectedPeriod.month }}</p>
 <button mat-raised-button color="primary">Change Period</button>
 
-<div class="mat-elevation-z8">
-    <mat-table [dataSource]="expenses" matSort>
-        <ng-container matColumnDef="id">
-            <mat-header-cell *matHeaderCellDef mat-sort-header>Id</mat-header-cell>
-            <mat-cell *matCellDef="let element">{{ element.id }}</mat-cell>
-        </ng-container>
+<mat-table [dataSource]="expenses" matSort>
+    <ng-container matColumnDef="id">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Id</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{ element.id }}</mat-cell>
+    </ng-container>
 
-        <ng-container matColumnDef="name">
-            <mat-header-cell *matHeaderCellDef mat-sort-header>Name</mat-header-cell>
-            <mat-cell *matCellDef="let element">{{ element.name }}</mat-cell>
-        </ng-container>
+    <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Name</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{ element.name }}</mat-cell>
+    </ng-container>
 
-        <ng-container matColumnDef="createBy">
-            <mat-header-cell *matHeaderCellDef mat-sort-header>Create By</mat-header-cell>
-            <mat-cell *matCellDef="let element">{{ element.createBy }}</mat-cell>
-        </ng-container>
+    <ng-container matColumnDef="createBy">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Create By</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{ element.createBy }}</mat-cell>
+    </ng-container>
 
-        <ng-container matColumnDef="amount">
-            <mat-header-cell *matHeaderCellDef mat-sort-header>Amount</mat-header-cell>
-            <mat-cell *matCellDef="let element">{{ element.amount | currency: 'BRL' }}</mat-cell>
-        </ng-container>
+    <ng-container matColumnDef="amount">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Amount</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{ element.amount | currency : "BRL" }}</mat-cell>
+    </ng-container>
 
-        <ng-container matColumnDef="dueDate">
-            <mat-header-cell *matHeaderCellDef mat-sort-header>Due Date</mat-header-cell>
-            <mat-cell *matCellDef="let element">{{ element.dueDate | date:'dd/MM/yyyy' }}</mat-cell>
-        </ng-container>
+    <ng-container matColumnDef="dueDate">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Due Date</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{ element.dueDate | date : "dd/MM/yyyy" }}</mat-cell>
+    </ng-container>
 
-        <ng-container matColumnDef="payDate">
-            <mat-header-cell *matHeaderCellDef mat-sort-header>Pay Date</mat-header-cell>
-            <mat-cell *matCellDef="let element">{{ element.payDate | date:'dd/MM/yyyy' }}</mat-cell>
-        </ng-container>
+    <ng-container matColumnDef="payDate">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Pay Date</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{ element.payDate | date : "dd/MM/yyyy" }}</mat-cell>
+    </ng-container>
 
-        <ng-container matColumnDef="category">
-            <mat-header-cell *matHeaderCellDef mat-sort-header>Category</mat-header-cell>
-            <mat-cell *matCellDef="let element">{{ element.category }}</mat-cell>
-        </ng-container>
+    <ng-container matColumnDef="category">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Category</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{ element.category }}</mat-cell>
+    </ng-container>
 
-        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-        <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
-    </mat-table>
-</div>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+</mat-table>
 
 <pre>
     <code>

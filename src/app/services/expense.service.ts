@@ -11,6 +11,6 @@ export class ExpenseService {
     constructor(private http: HttpClient) {}
 
     public getByPeriod(period: Period): Observable<Expense[]> {
-        return this.http.get<Expense[]>(`http://localhost:5076/expenses?Year=${period.year}&Month=${period.month}`);
+        return this.http.get<Expense[]>(`https://smart-home-expenses-api.azurewebsites.net/expenses?Year=${period.year}&Month=${period.month}`);
     }
 }

@@ -11,7 +11,7 @@ import { ExpenseService } from "src/app/services/expense.service";
 export class ViewExpensesComponent implements OnInit {
     public expenses: Expense[] = [];
     public displayedColumns: string[] = ['name', 'amount', 'dueDate', 'payDate', 'category', 'createBy'];
-    public selectedPeriod: Period = { year: 2023, month: 3 };
+    public selectedPeriod: Period = { year: 2023, month: 5 };
 
     constructor(private expenseService: ExpenseService) {}
 

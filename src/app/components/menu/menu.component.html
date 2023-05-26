@@ -5,27 +5,23 @@
     <mat-list-item routerLink="expenses">
         <mat-icon>attach_money</mat-icon><span>Expenses</span>
     </mat-list-item>
+    <mat-divider></mat-divider>
     <mat-expansion-panel [class.mat-elevation-z0]="true">
         <mat-expansion-panel-header>
-            Mobile Phone
+            To Do List
         </mat-expansion-panel-header>
         <mat-nav-list>
             <a mat-list-item routerLink="#">
-                <mat-icon>apple</mat-icon><span>iOS</span>
+                <mat-icon>add</mat-icon><span>Add</span>
             </a>
             <a mat-list-item routerLink="#">
-                <mat-icon>android</mat-icon><span>Android</span>
+                <mat-icon>delete</mat-icon><span>Remove</span>
             </a>
-        </mat-nav-list>
-    </mat-expansion-panel>
-    <mat-expansion-panel [class.mat-elevation-z0]="true">
-        <mat-expansion-panel-header>
-            Frameworks
-        </mat-expansion-panel-header>
-        <mat-nav-list>
-            <a mat-list-item routerLink="#">Spring</a>
-            <a mat-list-item routerLink="#">Hibernate</a>
-            <a mat-list-item routerLink="#">Struts</a>
         </mat-nav-list>
     </mat-expansion-panel>
 </mat-nav-list>
+<mat-divider></mat-divider>
+<button mat-button class="menu-button">
+    <mat-icon>help</mat-icon>
+    <span>Help</span>
+</button>
