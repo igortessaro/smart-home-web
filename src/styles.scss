@@ -21,42 +21,27 @@ mat-toolbar {
 
 mat-sidenav {
     margin: 16px;
-    width: 200px;
+    width: 250px;
     border-right: none;
     background: #002b5c;
     color: white;
     border-radius: 10px;
     padding: 16px;
-    text-align: center;
+    text-align: left;
 }
 
 .content {
-    height: calc(100vh - 98px);
+    height: calc(100vh - 100px);
     border-radius: 10px;
     margin: 16px;
     margin-left: 32px;
     padding: 30px;
-    //display: flex;
-    //justify-content: center;
-    //align-items: center;
     font-size: 2rem;
     color: lightgray;
 }
 
 mat-sidenav-container {
     height: calc(100vh - 65px);
-}
-
-.avatar {
-    margin-top: 16px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-
-.name {
-    margin-top: 8px;
-    font-weight: normal;
 }
 
 .designation {
@@ -66,6 +51,6 @@ mat-sidenav-container {
 }
 
 .page-content {
-    width: 95%;
-    height: 95%;
+    width: 92%;
+    height: 87.5%;
 }
